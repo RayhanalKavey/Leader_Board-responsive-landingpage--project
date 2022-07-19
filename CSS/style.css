@@ -31,13 +31,8 @@ body {
 }
 .container {
   max-width: 87rem;
-  margin: 0 auto;
+  margin: 2.1rem auto;
   border: 2px solid chocolate;
-}
-/* ==========================
-Top Player and Top Blog SectioN
-   ==========================  */
-.top-plauer-top-blog {
   padding: 4.2rem 3rem;
   background-color: var(--common-section-color);
 }
@@ -47,6 +42,14 @@ Top Player and Top Blog SectioN
   margin-bottom: 3rem;
   font-weight: 500;
 }
+.article-heading {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+/* ==========================
+Top Player and Top Blog SectioN
+   ==========================  */
 .top-players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -86,9 +89,50 @@ Top Player and Top Blog SectioN
   height: 11.7rem;
 }
 .top-blog h3 {
-  font-size: 2.4rem;
-  margin-bottom: 0.6rem;
 }
 .top-blog p {
   font-size: 1.6rem;
+}
+/* ========================
+Top Player and Top Blog SectioN
+========================  */
+
+.latest-courses {
+  display: flex;
+  gap: 2.4rem;
+}
+.latest-course {
+  padding: 1.3rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 14px #9f9f9f;
+  border-radius: 2rem;
+}
+.latest-course img {
+  width: 22.4rem;
+  height: 10.4rem;
+  margin-bottom: 0.8rem;
+}
+.latest-course p {
+  font-size: 1.4rem;
+  color: rgba(237, 107, 79);
+  margin-bottom: 2rem;
+}
+.fa-star {
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.fa-star.filled {
+  color: rgba(255, 192, 20);
+}
+.fa-star.empty {
+  color: rgba(174, 174, 174);
+}
+.rating {
+  display: flex;
+  gap: 1rem;
+}
+.latest-course span {
+  font-size: 4.5;
 }

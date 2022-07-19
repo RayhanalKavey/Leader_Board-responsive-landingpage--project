@@ -1,0 +1,40 @@
+/* Colors:
+Heading Font color: rgba(86,46,255,1) (font weight 500)
+*/
+:root {
+  --section-heading-color: rgba(86, 46, 255, 1);
+  --page-background-color: #e5e5e5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1;
+  font-weight: 400;
+  background-color: var(--page-background-color);
+}
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  border: 2px solid chocolate;
+}
+/* ==========================
+Top Player and Top Blog SectioN
+   ==========================  */
+.top-plauer-top-blog {
+}
+.section-heading {
+  color: var(--section-heading-color);
+}
+.top-players {
+  background-color: aquamarine;
+}
+.player img {
+  height: 5.6rem;
+  width: 5.6rem;
+}

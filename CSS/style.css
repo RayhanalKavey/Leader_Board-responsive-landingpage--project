@@ -2,8 +2,11 @@
 Heading Font color: rgba(86,46,255,1) (font weight 500)
 */
 :root {
-  --section-heading-color: rgba(86, 46, 255, 1);
+  --section-heading-color: #562eff;
   --page-background-color: #e5e5e5;
+  --common-section-color: #ffffff;
+  --larg-text-color: #000000;
+  --small-text-color: #9f9f9f;
 }
 * {
   margin: 0;
@@ -19,7 +22,7 @@ body {
   background-color: var(--page-background-color);
 }
 .container {
-  max-width: 130rem;
+  max-width: 87rem;
   margin: 0 auto;
   border: 2px solid chocolate;
 }
@@ -27,14 +30,33 @@ body {
 Top Player and Top Blog SectioN
    ==========================  */
 .top-plauer-top-blog {
+  padding: 3rem;
+  background-color: var(--common-section-color);
 }
 .section-heading {
   color: var(--section-heading-color);
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
 }
 .top-players {
-  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3rem;
+}
+.player {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 .player img {
   height: 5.6rem;
   width: 5.6rem;
+}
+.player h3 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--larg-text-color);
+}
+.horizontal-line {
+  margin: 3rem;
 }

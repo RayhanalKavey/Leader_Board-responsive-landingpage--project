@@ -31,7 +31,7 @@ body {
 }
 .container {
   max-width: 87rem;
-  margin: 2.1rem auto;
+  margin: 1.4rem auto;
   border: 2px solid chocolate;
   padding: 4.2rem 3rem;
   background-color: var(--common-section-color);
@@ -135,4 +135,40 @@ Top Player and Top Blog SectioN
 }
 .latest-course span {
   font-size: 4.5;
+}
+/* ========================
+Media query SectioN
+========================  */
+@media screen and (max-width: 55em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 39em) {
+  .top-players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-blogs {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .latest-courses {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .latest-course {
+    align-items: center;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 30em) {
+  html {
+    font-size: 35%;
+  }
+  .latest-course {
+    align-items: center;
+    width: 75%;
+  }
 }
